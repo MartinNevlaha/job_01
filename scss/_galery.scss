@@ -70,6 +70,13 @@
             h3 {
                 padding: 2rem;
             }
+            p {
+                display: none;
+                font-size: get-font-size(ex-small);
+                color: get-color(secondary);
+                text-transform: lowercase;
+                margin: 1rem;
+            }
 
             &_add_category {
                 &_plus {
@@ -95,4 +102,11 @@
     .gallery_content_item {
         width: 45rem;
     }
+}
+
+.hovered {
+    img: {
+        height: 50%;
+    }
+    p {display: block;}
 }

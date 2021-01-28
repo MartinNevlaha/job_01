@@ -240,6 +240,12 @@ body {
         object-fit: cover; }
       .gallery_content_item h3 {
         padding: 2rem; }
+      .gallery_content_item p {
+        display: none;
+        font-size: calc(.2rem + .5vw);
+        color: #b3b1b1;
+        text-transform: lowercase;
+        margin: 1rem; }
       .gallery_content_item_add_category_plus {
         display: flex;
         flex-direction: row;
@@ -259,3 +265,8 @@ body {
 @media screen and (max-width: 1450px) {
   .gallery_content_item {
     width: 45rem; } }
+
+.hovered {
+  img-height: 50%; }
+  .hovered p {
+    display: block; }
