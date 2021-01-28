@@ -21,8 +21,8 @@
         &_item {
             @include flexbox(center, center, column);
             @include text-style(small, 600, get-color(primary));
-            width: 25rem;
-            height: 25rem;
+            width: 20rem;
+            height: 20rem;
             border-radius: 6px;
             overflow: hidden;
             box-shadow: 0px 0px 18px 0px get-color(shadow);
@@ -70,6 +70,7 @@
             h3 {
                 padding: 2rem;
             }
+
             &_add_category {
                 &_plus {
                     @include flexbox(center, center, row);

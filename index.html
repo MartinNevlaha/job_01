@@ -1,61 +1,65 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/main.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/main.css" />
     <script src="./scripts/app.js" defer></script>
     <title>Document</title>
-</head>
-<body>
+  </head>
+  <body>
     <div class="backdrop">
-        <div class="backdrop_transparent">
-            <p><span id="backdropClose">X</span> Zavrieť</p>
-            <div class="backdrop_add_category">
-
-            </div>
+      <div class="backdrop_transparent">
+        <p id="closeBackdrop"><span>X</span> ZAVRIEŤ</p>
+        <div class="backdrop_add_category">
+          <h2>Pridať kategóriu</h2>
+          <div class="backdrop_add_category_input_container">
+            <input type="text" placeholder="ZADAJTE NÁZOV KATEGÓRIE" />
+            <button>+ Pridať</button>
+          </div>
         </div>
+      </div>
     </div>
     <div class="bg_fixed"></div>
     <div class="bg_fake"></div>
     <header class="main_header">
-        <div class="main_header_background"></div>
-        <div class="main_header_title">
-            <h1>Fotogaléria</h1>
-        </div>
+      <div class="main_header_background"></div>
+      <div class="main_header_title">
+        <h1>Fotogaléria</h1>
+      </div>
     </header>
-        <section class="gallery">
-            <div class="gallery_title">
-                <h2>Kategórie</h2>
-            </div>
-            <div class="gallery_content">
-                <div class="gallery_content_item">
-                    <img src="./assets/gallery_1.jpeg" alt="nature">
-                    <h3>Príroda</h3>
-                </div>
-                <div class="gallery_content_item">
-                    <img src="./assets/gallery_2.jpeg" alt="nature">
-                    <h3>Architektúra</h3>
-                </div>
-                <div class="gallery_content_item">
-                    <img src="./assets/gallery_3.jpg" alt="nature">
-                    <h3>Ľudia</h3>
-                </div>
-                <div class="gallery_content_item">
-                    <img src="./assets/gallery_4.jpg" alt="nature">
-                    <h3>Jedlo</h3>
-                </div>
-                <div class="gallery_content_item">
-                    <img src="./assets/gallery_5.jpeg" alt="nature">
-                    <h3>Autá</h3>
-                </div>
-                <div id="backdropOpen" class="gallery_content_item">
-                    <div class="gallery_content_item_add_category_plus">
-                    +
-                    </div>
-                    <h3 class="gallery_content_item_add_category_title">Pridať kategóriu</h3>
-                </div>
-            </div>
-        </section>
-</body>
+    <section class="gallery">
+      <div class="gallery_title">
+        <h2>Kategórie</h2>
+      </div>
+      <div class="gallery_content">
+        <div class="gallery_content_item">
+          <img src="./assets/gallery_1.jpeg" alt="nature" />
+          <h3>Príroda</h3>
+        </div>
+        <div class="gallery_content_item">
+          <img src="./assets/gallery_2.jpeg" alt="nature" />
+          <h3>Architektúra</h3>
+        </div>
+        <div class="gallery_content_item">
+          <img src="./assets/gallery_3.jpg" alt="nature" />
+          <h3>Ľudia</h3>
+        </div>
+        <div class="gallery_content_item">
+          <img src="./assets/gallery_4.jpg" alt="nature" />
+          <h3>Jedlo</h3>
+        </div>
+        <div class="gallery_content_item">
+          <img src="./assets/gallery_5.jpeg" alt="nature" />
+          <h3>Autá</h3>
+        </div>
+        <div id="backdropOpen" class="gallery_content_item">
+          <div class="gallery_content_item_add_category_plus">+</div>
+          <h3 class="gallery_content_item_add_category_title">
+            Pridať kategóriu
+          </h3>
+        </div>
+      </div>
+    </section>
+  </body>
 </html>

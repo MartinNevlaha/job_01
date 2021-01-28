@@ -3,6 +3,7 @@ $colors: (
     secondary: rgb(179, 177, 177),
     shadow: rgba(50, 50, 50, 0.75),
     backdrop: rgba(0, 0, 0, 0.849),
+    btn: #42C88D,
 );
 
 @function get-color($color-name) {
