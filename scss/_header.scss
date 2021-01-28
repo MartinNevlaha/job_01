@@ -1,0 +1,35 @@
+.bg_fixed {
+    position: absolute;
+    width: 100%;
+    height: 30rem;
+    background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url("../assets/gallery_2.jpeg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    filter: blur(8px);
+}
+
+.bg_fake {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 30rem;
+    background-color: get-color(primary);
+    z-index: -20;
+}
+
+.main_header {
+    width: 100%;
+    height: 30rem;
+    position: relative;
+    
+    &_title {
+        @include text-style(large, 600, white);
+        @include centered-position(45%, 50%);
+        width: 80%;
+        padding: 2rem;
+        text-align: left;
+        z-index: 5;;
+    }
+}

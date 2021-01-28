@@ -1,0 +1,21 @@
+@mixin  text-style($text-size, $font-weight, $color) {
+    text-transform: uppercase;
+    font-size: get-font-size($text-size);
+    letter-spacing: 2px;
+    font-weight: $font-weight;
+    color: $color
+}
+
+@mixin flexbox($justify, $align, $direction) {
+    display: flex;
+    flex-direction: $direction;
+    justify-content: $justify;
+    align-items: $align;
+}
+
+@mixin centered-position($top, $left) {
+    position: absolute;
+    top: $top;
+    left: $left;
+    transform: translate(-50%, -50%);
+}

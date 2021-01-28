@@ -1,0 +1,21 @@
+$colors: (
+    primary: gray,
+    secondary: rgb(179, 177, 177),
+    shadow: rgba(50, 50, 50, 0.75),
+    backdrop: rgba(0, 0, 0, 0.849),
+);
+
+@function get-color($color-name) {
+    @return map-get($colors, $color-name);
+};
+
+$font-sizes: (
+    ex-small: calc(.2rem + .5vw),
+    small: calc(.3rem + .8vw),
+    medium: calc(.4rem + 1vw),
+    large: calc(.6rem + 1.3vw)
+);
+
+@function get-font-size($size) {
+    @return map-get($font-sizes, $size );
+};
